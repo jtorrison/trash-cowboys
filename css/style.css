@@ -1,6 +1,7 @@
 /* ================================================================
-   TRASH COWBOYS · STYLE.CSS · CLEAN REBUILD V2
-   White hero version
+   TRASH COWBOYS · STYLE.CSS · V3
+   White hero. Bebas Neue section headlines. Rye for hero + cowboy code only.
+   Google rating badge. Dual CTA pattern.
    ================================================================ */
 
 :root {
@@ -25,6 +26,7 @@
   --line-strong: #D3CFC0;
 
   --f-display: 'Rye', Georgia, serif;
+  --f-headline: 'Bebas Neue', 'Oswald', 'Arial Narrow', sans-serif;
   --f-sub: 'Oswald', 'Arial Narrow', sans-serif;
   --f-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
@@ -68,7 +70,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .section-dark { background: var(--pine); color: var(--bone); }
 
-h1, h2, h3, h4 {
+/* ============ TYPOGRAPHY ============ */
+/* Section headlines now use Bebas Neue: strong, clean, easy to read */
+h2, h3, h4 {
+  font-family: var(--f-headline);
+  color: var(--pine);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+/* Hero h1 keeps Rye for the cowboy moment */
+h1 {
   font-family: var(--f-display);
   color: var(--pine);
   line-height: 1.05;
@@ -78,9 +90,9 @@ h1, h2, h3, h4 {
 .section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4 { color: var(--bone); }
 
 h1 { font-size: clamp(48px, 7vw, 88px); letter-spacing: -0.02em; }
-h2 { font-size: clamp(36px, 4.5vw, 54px); margin-bottom: 20px; }
-h3 { font-size: clamp(22px, 2.2vw, 28px); }
-h4 { font-size: 18px; }
+h2 { font-size: clamp(40px, 5vw, 68px); margin-bottom: 20px; letter-spacing: 0.02em; }
+h3 { font-size: clamp(24px, 2.4vw, 32px); letter-spacing: 0.01em; }
+h4 { font-size: 20px; letter-spacing: 0.02em; }
 
 .eyebrow {
   display: inline-block;
@@ -108,6 +120,7 @@ h4 { font-size: 18px; }
 }
 .section-foot p { font-size: 17px; color: var(--ink-mid); font-style: italic; }
 
+/* ============ BUTTONS ============ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -149,6 +162,7 @@ h4 { font-size: 18px; }
 .btn-gold { background: var(--gold); color: var(--pine-deep); }
 .btn-gold:hover { background: var(--gold-deep); color: var(--white); }
 
+/* ============ TOP STRIP ============ */
 .top-strip {
   background: var(--pine-deep);
   color: var(--cream);
@@ -167,6 +181,7 @@ h4 { font-size: 18px; }
   .ts-icon { width: 14px; height: 14px; }
 }
 
+/* ============ NAV ============ */
 .nav {
   background: var(--white);
   border-bottom: 1px solid var(--line);
@@ -230,7 +245,7 @@ h4 { font-size: 18px; }
   .nav-cta { padding: 12px 14px; }
 }
 
-/* ============ HERO — white version ============ */
+/* ============ HERO ============ */
 .hero {
   background: var(--bone);
   color: var(--ink);
@@ -261,16 +276,85 @@ h4 { font-size: 18px; }
   font-size: 20px;
   color: var(--ink-mid);
   line-height: 1.55;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   max-width: 520px;
-  font-style: italic;
 }
 .hero-ctas {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
+
+/* Google rating badge (hero social proof) */
+.hero-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 36px;
+}
+.rating-badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.g-logo {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.rating-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.rating-stars svg {
+  width: 16px;
+  height: 16px;
+  color: var(--gold);
+}
+.rating-stars strong {
+  margin-left: 6px;
+  font-family: var(--f-sub);
+  font-size: 16px;
+  color: var(--ink);
+  font-weight: 600;
+}
+.rating-content > span {
+  font-family: var(--f-sub);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+}
+.hero-trust {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--f-sub);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 600;
+}
+.hero-trust svg {
+  width: 16px;
+  height: 16px;
+  color: var(--pine);
+}
+
 .hero-areas {
   font-family: var(--f-sub);
   font-size: 12px;
@@ -298,10 +382,12 @@ h4 { font-size: 18px; }
   .hero-inner { grid-template-columns: 1fr; gap: 50px; text-align: center; }
   .hero-lede { margin-left: auto; margin-right: auto; }
   .hero-ctas { justify-content: center; }
+  .hero-social { justify-content: center; }
   .hero-areas { margin-left: auto; margin-right: auto; }
   .hero-badge img { max-width: 300px; }
 }
 
+/* ============ TRUST STRIP ============ */
 .trust-strip {
   background: var(--white);
   border-top: 1px solid var(--line);
@@ -328,11 +414,8 @@ h4 { font-size: 18px; }
 }
 .trust-item svg { width: 20px; height: 20px; color: var(--pine); flex-shrink: 0; }
 
-.urgent-bar {
-  background: var(--dust);
-  color: var(--white);
-  padding: 18px 0;
-}
+/* ============ URGENT BAR ============ */
+.urgent-bar { background: var(--dust); color: var(--white); padding: 18px 0; }
 .urgent-bar .container {
   display: flex;
   align-items: center;
@@ -350,6 +433,7 @@ h4 { font-size: 18px; }
 }
 .urgent-text span { font-size: 13px; opacity: 0.95; }
 
+/* ============ SERVICES ============ */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -368,9 +452,10 @@ h4 { font-size: 18px; }
   box-shadow: var(--shadow-md);
 }
 .service-icon { width: 40px; height: 40px; color: var(--pine); margin-bottom: 20px; }
-.service h3 { margin-bottom: 8px; font-size: 24px; }
+.service h3 { margin-bottom: 8px; }
 .service p { color: var(--ink-mid); font-size: 15px; line-height: 1.55; }
 
+/* ============ PHOTO STRIP ============ */
 .photo-strip { background: var(--bone); padding: 100px 0; }
 .photo-strip .container {
   display: grid;
@@ -406,6 +491,7 @@ h4 { font-size: 18px; }
   text-transform: uppercase;
   opacity: 0.7;
 }
+/* Big quote keeps Rye for the cowboy character moment */
 .big-quote { border-left: 3px solid var(--gold); padding-left: 32px; }
 .big-quote p {
   font-family: var(--f-display);
@@ -421,6 +507,7 @@ h4 { font-size: 18px; }
   .photo-strip { padding: 80px 0; }
 }
 
+/* ============ ECO ============ */
 .eco { background: var(--white); }
 .eco-steps {
   display: grid;
@@ -451,7 +538,7 @@ h4 { font-size: 18px; }
   border-radius: 999px;
 }
 .eco-icon { width: 48px; height: 48px; color: var(--pine); margin: 0 auto 20px; }
-.eco-step h3 { margin-bottom: 12px; font-size: 26px; }
+.eco-step h3 { margin-bottom: 12px; }
 .eco-step > p { color: var(--ink-mid); margin-bottom: 24px; font-size: 15px; line-height: 1.55; }
 .eco-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
 .eco-tags span {
@@ -469,6 +556,7 @@ h4 { font-size: 18px; }
 
 @media (max-width: 880px) { .eco-steps { grid-template-columns: 1fr; } }
 
+/* Cowboy code keeps Rye for the brand character moment */
 .cowboy-code {
   background: var(--pine);
   color: var(--bone);
@@ -487,6 +575,7 @@ h4 { font-size: 18px; }
   color: var(--bone);
 }
 
+/* ============ HOW IT WORKS ============ */
 .how { background: var(--bone); }
 .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .how-card {
@@ -518,6 +607,7 @@ h4 { font-size: 18px; }
 
 @media (max-width: 880px) { .how-grid { grid-template-columns: 1fr; } }
 
+/* ============ COMMERCIAL ============ */
 .commercial-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -554,8 +644,6 @@ h4 { font-size: 18px; }
 }
 .commercial-card h3 {
   color: var(--bone);
-  font-size: clamp(26px, 3vw, 34px);
-  line-height: 1.2;
   margin: 12px 0 20px;
 }
 .commercial-card > p { color: var(--cream); font-size: 15px; margin-bottom: 32px; line-height: 1.55; }
@@ -579,6 +667,7 @@ h4 { font-size: 18px; }
 
 @media (max-width: 880px) { .commercial-grid { grid-template-columns: 1fr; gap: 50px; } }
 
+/* ============ AREAS ============ */
 .areas { background: var(--white); }
 .areas-grid {
   display: grid;
@@ -600,6 +689,7 @@ h4 { font-size: 18px; }
 .area-col ul { display: grid; gap: 10px; }
 .area-col li { color: var(--ink); font-size: 15px; }
 
+/* ============ REVIEWS ============ */
 .reviews { background: var(--bone); }
 .reviews-grid {
   display: grid;
@@ -633,6 +723,7 @@ h4 { font-size: 18px; }
 }
 .review footer span { font-size: 13px; color: var(--ink-mid); }
 
+/* ============ ABOUT ============ */
 .about { background: var(--white); }
 .about-grid {
   display: grid;
@@ -684,6 +775,7 @@ h4 { font-size: 18px; }
   .about-checks { max-width: 380px; margin: 28px auto 0; }
 }
 
+/* ============ FAQ ============ */
 .faq { background: var(--bone); }
 .faq-list { display: grid; gap: 10px; }
 .faq details {
@@ -729,6 +821,7 @@ h4 { font-size: 18px; }
   margin-top: -4px;
 }
 
+/* ============ QUOTE ============ */
 .quote-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 80px; }
 .quote-copy h2 { color: var(--bone); margin-bottom: 20px; }
 .quote-copy > p { color: var(--cream); font-size: 18px; margin-bottom: 36px; line-height: 1.6; }
@@ -839,6 +932,7 @@ h4 { font-size: 18px; }
   .quote-form { padding: 24px; }
 }
 
+/* ============ FOOTER ============ */
 .footer { background: var(--pine-deep); color: var(--cream); padding: 80px 0 28px; }
 .footer-top {
   display: grid;

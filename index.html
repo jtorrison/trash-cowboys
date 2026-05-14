@@ -3,33 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trash Cowboys — Eco-First Junk Removal · Denver CO</title>
+<title>Trash Cowboys · Eco-First Junk Removal · Denver CO</title>
 <meta name="description" content="Denver's eco-first junk removal crew. We recycle what we can, donate what we can't, and landfill only what's left. Same-day service. Text a photo for a fast quote.">
 
-<!-- Favicon -->
 <link rel="icon" type="image/png" href="images/favicon.png?v=2">
 <link rel="apple-touch-icon" href="images/favicon.png?v=2">
 
-<!-- Social preview -->
-<meta property="og:title" content="Trash Cowboys — Eco-First Junk Removal · Denver">
+<meta property="og:title" content="Trash Cowboys · Eco-First Junk Removal · Denver">
 <meta property="og:description" content="We recycle what we can, donate what we can't, and landfill only what's left. Same-day service across Denver Metro.">
 <meta property="og:image" content="images/logo-main.png">
 <meta property="og:url" content="https://trashcowboys.co">
 <meta property="og:type" content="website">
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ============ SVG ICON SPRITE — all icons defined once, used many times ============ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <!-- All icons sit in a 24×24 viewbox, stroke-based, currentColor for easy theming -->
     <symbol id="i-sofa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
       <path d="M3 11v6a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-6"/>
       <path d="M21 11a2 2 0 0 0-2-2h-1V7a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3z"/>
@@ -143,18 +138,22 @@
     <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <polyline points="6 9 12 15 18 9"/>
     </symbol>
+    <symbol id="i-google" viewBox="0 0 24 24">
+      <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+      <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+      <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+      <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+    </symbol>
   </defs>
 </svg>
 
-<!-- ============ TOP STRIP — eco line ============ -->
 <div class="top-strip">
   <div class="container">
     <svg class="ts-icon"><use href="#i-recycle"/></svg>
-    <span>We recycle what we can — every single haul. <strong>Donate first. Recycle second. Landfill last.</strong></span>
+    <span>Recycling, donating, and keeping junk out of Colorado landfills. <strong>Every haul.</strong></span>
   </div>
 </div>
 
-<!-- ============ NAV ============ -->
 <nav class="nav">
   <div class="container nav-inner">
     <a href="#top" class="nav-logo" aria-label="Trash Cowboys home">
@@ -175,35 +174,49 @@
   </div>
 </nav>
 
-<!-- ============ HERO ============ -->
 <header class="hero" id="top">
   <div class="container hero-inner">
     <div class="hero-copy">
-      <span class="eyebrow eyebrow-gold">— Denver's Eco-First Junk Crew —</span>
+      <span class="eyebrow eyebrow-gold">Denver's Eco-First Junk Crew</span>
       <h1>
         <span>We Ride In</span>
         <span>&amp; Haul It Out.</span>
       </h1>
-      <p class="hero-lede">We recycle what we can, donate what we can't, and landfill only what's left.</p>
+      <p class="hero-lede">Same-day junk removal across Denver Metro. We recycle, donate, and dispose of your stuff the right way.</p>
       <div class="hero-ctas">
-        <a href="tel:3035550199" class="btn btn-primary btn-lg">
-          <svg><use href="#i-phone"/></svg>
-          <span>(303) 555-0199</span>
+        <a href="#quote" class="btn btn-primary btn-lg">
+          <span>Request a Free Quote</span>
+          <svg><use href="#i-arrow"/></svg>
         </a>
-        <a href="#quote" class="btn btn-ghost btn-lg">
-          <svg><use href="#i-camera"/></svg>
-          <span>Text a Photo</span>
+        <a href="tel:3035550199" class="btn btn-ghost btn-lg">
+          <svg><use href="#i-phone"/></svg>
+          <span>Call Now</span>
         </a>
       </div>
-      <p class="hero-areas">Serving Aurora · Golden · Westminster · Boulder · Lakewood · Wheat Ridge · Applewood · All of Metro Denver</p>
+      <div class="hero-social">
+        <div class="rating-badge">
+          <svg class="g-logo"><use href="#i-google"/></svg>
+          <div class="rating-content">
+            <div class="rating-stars">
+              <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+              <strong>5.0</strong>
+            </div>
+            <span>Google Reviews</span>
+          </div>
+        </div>
+        <div class="hero-trust">
+          <span><svg><use href="#i-check"/></svg> Licensed &amp; Insured</span>
+          <span><svg><use href="#i-bolt"/></svg> Same-Day Available</span>
+        </div>
+      </div>
+      <p class="hero-areas">Aurora · Golden · Westminster · Boulder · Lakewood · Wheat Ridge · Applewood · All of Metro Denver</p>
     </div>
     <div class="hero-badge">
-      <img src="images/logo-main.png" alt="Trash Cowboys — We Ride In & Haul It Out — Junk Removal Denver">
+      <img src="images/logo-main.png" alt="Trash Cowboys, Junk Removal Denver">
     </div>
   </div>
 </header>
 
-<!-- ============ TRUST STRIP ============ -->
 <section class="trust-strip">
   <div class="container">
     <div class="trust-item">
@@ -225,61 +238,59 @@
   </div>
 </section>
 
-<!-- ============ SAME DAY URGENCY BAR ============ -->
 <section class="urgent-bar">
   <div class="container">
     <svg><use href="#i-bolt"/></svg>
     <div class="urgent-text">
       <strong>Need It Gone Today?</strong>
-      <span>Same-day available — call before noon.</span>
+      <span>Same-day service available. Call before noon.</span>
     </div>
     <a href="tel:3035550199" class="btn btn-white">Call Now</a>
   </div>
 </section>
 
-<!-- ============ SERVICES ============ -->
 <section class="services section" id="services">
   <div class="container">
     <header class="section-head">
-      <span class="eyebrow">— What We Wrangle —</span>
+      <span class="eyebrow">What We Wrangle</span>
       <h2>We Haul Just About Anything</h2>
-      <p>Residential, commercial, big or small. If you can pile it, we'll haul it — eco-first, every time.</p>
+      <p>Residential, commercial, big or small. If you can pile it, we'll haul it. Eco first, every time.</p>
     </header>
     <div class="services-grid">
       <article class="service">
         <svg class="service-icon"><use href="#i-sofa"/></svg>
         <h3>Furniture</h3>
-        <p>Sofas, beds, dressers, desks — no stairs too tall for a cowboy.</p>
+        <p>Sofas, beds, dressers, desks. No stairs too tall for a cowboy.</p>
       </article>
       <article class="service">
         <svg class="service-icon"><use href="#i-appliance"/></svg>
         <h3>Appliances</h3>
-        <p>Fridges, washers, dryers, AC units — disconnected and hauled.</p>
+        <p>Fridges, washers, dryers, AC units. Disconnected and hauled.</p>
       </article>
       <article class="service">
         <svg class="service-icon"><use href="#i-house"/></svg>
         <h3>Full Cleanouts</h3>
-        <p>Garage, estate, hoarder, storage unit — we bring the crew.</p>
+        <p>Garage, estate, hoarder, storage unit. We bring the crew.</p>
       </article>
       <article class="service">
         <svg class="service-icon"><use href="#i-mattress"/></svg>
         <h3>Mattresses</h3>
-        <p>Eco-friendly mattress disposal — recycled, not just dumped.</p>
+        <p>Eco-friendly mattress disposal. Recycled, not just dumped.</p>
       </article>
       <article class="service">
         <svg class="service-icon"><use href="#i-electronics"/></svg>
         <h3>Electronics</h3>
-        <p>TVs, computers, monitors — certified e-waste recycling.</p>
+        <p>TVs, computers, monitors. Certified e-waste recycling.</p>
       </article>
       <article class="service">
         <svg class="service-icon"><use href="#i-construction"/></svg>
         <h3>Construction Debris</h3>
-        <p>Drywall, lumber, tile, concrete — post-reno cleanups done right.</p>
+        <p>Drywall, lumber, tile, concrete. Post-reno cleanups done right.</p>
       </article>
       <article class="service">
         <svg class="service-icon"><use href="#i-yard"/></svg>
         <h3>Yard Waste</h3>
-        <p>Branches, dirt, rocks, fencing — we make it look untouched.</p>
+        <p>Branches, dirt, rocks, old fencing. We make it look untouched.</p>
       </article>
       <article class="service">
         <svg class="service-icon"><use href="#i-hottub"/></svg>
@@ -289,41 +300,38 @@
       <article class="service">
         <svg class="service-icon"><use href="#i-hazard"/></svg>
         <h3>Hazardous &amp; Paint</h3>
-        <p>Old paints, chemicals, oils — taken to proper disposal sites.</p>
+        <p>Old paints, chemicals, oils. Taken to proper disposal sites.</p>
       </article>
     </div>
     <div class="section-foot">
       <p>Not sure if we take it? Just ask.</p>
       <a href="tel:3035550199" class="btn btn-primary">
         <svg><use href="#i-phone"/></svg>
-        <span>Call Us — We'll Figure It Out</span>
+        <span>Call Us, We'll Figure It Out</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ============ PHOTO + QUOTE STRIP ============ -->
 <section class="photo-strip">
   <div class="container">
-    <!-- PHOTO ZONE: drop a wide landscape image here when you have it (truck + crew on a job) -->
     <div class="photo-block" data-photo="truck-and-crew">
       <div class="photo-placeholder">
         <svg><use href="#i-truck"/></svg>
-        <p>Photo zone — replace with truck/crew shot</p>
+        <p>Photo zone: truck and crew shot</p>
       </div>
     </div>
     <blockquote class="big-quote">
       <p>"Got junk? We're probably 60 minutes away."</p>
-      <span>Call or text a photo. We'll get back to you fast — no waiting, no runaround.</span>
+      <span>Call or text a photo. We'll get back to you fast. No waiting, no runaround.</span>
     </blockquote>
   </div>
 </section>
 
-<!-- ============ ECO PROMISE ============ -->
 <section class="eco section" id="eco">
   <div class="container">
     <header class="section-head">
-      <span class="eyebrow">— Our Commitment —</span>
+      <span class="eyebrow">Our Commitment</span>
       <h2>Eco-First. Every Haul.</h2>
       <p>We don't just haul junk. We sort it. We donate before we dump. We recycle before we landfill. Here's exactly what happens to your stuff.</p>
     </header>
@@ -333,26 +341,18 @@
         <div class="eco-num">01</div>
         <svg class="eco-icon"><use href="#i-donate"/></svg>
         <h3>Donate First</h3>
-        <p>Furniture, clothing, working appliances, books, tools — anything still useful goes to Denver-area charities before anything else.</p>
+        <p>Furniture, clothing, working appliances, books, tools. Anything still useful goes to Denver-area charities before anything else.</p>
         <div class="eco-tags">
-          <span>Furniture</span>
-          <span>Clothing</span>
-          <span>Appliances</span>
-          <span>Tools</span>
-          <span>Books</span>
+          <span>Furniture</span><span>Clothing</span><span>Appliances</span><span>Tools</span><span>Books</span>
         </div>
       </article>
       <article class="eco-step">
         <div class="eco-num">02</div>
         <svg class="eco-icon"><use href="#i-recycle"/></svg>
         <h3>Recycle Second</h3>
-        <p>What can't be donated gets sorted at certified Colorado recycling facilities — metals, electronics, wood, concrete, mattresses.</p>
+        <p>What can't be donated gets sorted at certified Colorado recycling facilities. Metals, electronics, wood, concrete, mattresses.</p>
         <div class="eco-tags">
-          <span>Metals</span>
-          <span>Electronics</span>
-          <span>Wood</span>
-          <span>Concrete</span>
-          <span>Yard Waste</span>
+          <span>Metals</span><span>Electronics</span><span>Wood</span><span>Concrete</span><span>Yard Waste</span>
         </div>
       </article>
       <article class="eco-step">
@@ -361,24 +361,22 @@
         <h3>Landfill Last</h3>
         <p>Only what genuinely can't be donated, recycled, or repurposed. That's why 60%+ of every haul never sees a landfill.</p>
         <div class="eco-tags">
-          <span>True waste only</span>
-          <span>Hazmat handled right</span>
+          <span>True waste only</span><span>Hazmat handled right</span>
         </div>
       </article>
     </div>
 
     <aside class="cowboy-code">
       <svg class="cc-mark"><use href="#i-leaf"/></svg>
-      <p>"We leave the land cleaner than we found it.<br>That's not a tagline — it's the cowboy code."</p>
+      <p>"We leave the land cleaner than we found it. That's not a tagline, it's the cowboy code."</p>
     </aside>
   </div>
 </section>
 
-<!-- ============ HOW IT WORKS ============ -->
 <section class="how section" id="how">
   <div class="container">
     <header class="section-head">
-      <span class="eyebrow">— Simple as Sunday —</span>
+      <span class="eyebrow">Simple as Sunday</span>
       <h2>How It Works</h2>
       <p>Three steps. No surprises. No heavy lifting on your end.</p>
     </header>
@@ -393,7 +391,7 @@
         <div class="how-num">02</div>
         <svg class="how-icon"><use href="#i-calendar"/></svg>
         <h3>Pick Your Time</h3>
-        <p>Same-day or scheduled. We call 15–30 minutes before arrival. No four-hour windows.</p>
+        <p>Same-day or scheduled. We call 15 to 30 minutes before arrival. No four-hour windows.</p>
       </article>
       <article class="how-card">
         <div class="how-num">03</div>
@@ -405,12 +403,11 @@
   </div>
 </section>
 
-<!-- ============ COMMERCIAL — first dark section ============ -->
 <section class="commercial section-dark section" id="commercial">
   <div class="container">
     <div class="commercial-grid">
       <div class="commercial-copy">
-        <span class="eyebrow eyebrow-gold">— Long-Term Partnerships —</span>
+        <span class="eyebrow eyebrow-gold">Long-Term Partnerships</span>
         <h2>Commercial &amp; Property Management</h2>
         <p>Building relationships with Denver's property managers, contractors, real estate agents, and businesses who need a reliable junk crew on speed dial.</p>
         <ul class="commercial-list">
@@ -449,7 +446,7 @@
         </a>
       </div>
       <aside class="commercial-card">
-        <span class="eyebrow eyebrow-gold">— Speed Dial —</span>
+        <span class="eyebrow eyebrow-gold">Speed Dial</span>
         <h3>"Your junk crew on speed dial."</h3>
         <p>Property managers, contractors, and real estate pros get priority scheduling and a dedicated point of contact.</p>
         <div class="commercial-perks">
@@ -467,13 +464,12 @@
   </div>
 </section>
 
-<!-- ============ AREAS ============ -->
 <section class="areas section" id="areas">
   <div class="container">
     <header class="section-head">
-      <span class="eyebrow">— Where We Ride —</span>
+      <span class="eyebrow">Where We Ride</span>
       <h2>Serving Metro Denver &amp; the Front Range</h2>
-      <p>If you've got junk, we'll come to you. Don't see your city? Call us — we likely cover it.</p>
+      <p>If you've got junk, we'll come to you. Don't see your city? Call us. We likely cover it.</p>
     </header>
     <div class="areas-grid">
       <div class="area-col">
@@ -508,21 +504,16 @@
   </div>
 </section>
 
-<!-- ============ REVIEWS ============ -->
 <section class="reviews section">
   <div class="container">
     <header class="section-head">
-      <span class="eyebrow">— What Denver Says —</span>
+      <span class="eyebrow">What Denver Says</span>
       <h2>Don't Take Our Word For It</h2>
     </header>
     <div class="reviews-grid">
       <article class="review">
         <div class="stars">
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
+          <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
         </div>
         <p>"Called at 8am, they were there by noon. Hauled an entire garage in under 2 hours. These guys are the real deal."</p>
         <footer>
@@ -532,13 +523,9 @@
       </article>
       <article class="review">
         <div class="stars">
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
+          <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
         </div>
-        <p>"Texted a photo of my basement — had a quote in 20 minutes. Crew showed up next morning. Swept up after themselves too."</p>
+        <p>"Texted a photo of my basement and had a quote in 20 minutes. Crew showed up next morning. Swept up after themselves too."</p>
         <footer>
           <strong>Sarah K.</strong>
           <span>Lakewood</span>
@@ -546,11 +533,7 @@
       </article>
       <article class="review">
         <div class="stars">
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
-          <svg><use href="#i-star"/></svg>
+          <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
         </div>
         <p>"Estate cleanout after my mom passed. Professional, respectful, done in one day. I cannot recommend them enough."</p>
         <footer>
@@ -562,7 +545,6 @@
   </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
 <section class="about section">
   <div class="container">
     <div class="about-grid">
@@ -570,9 +552,9 @@
         <img src="images/favicon.png" alt="Trash Cowboys badge">
       </div>
       <div class="about-copy">
-        <span class="eyebrow">— About Us —</span>
+        <span class="eyebrow">About Us</span>
         <h2>Denver's Original Junk Wranglers</h2>
-        <p>Trash Cowboys was born right here in Denver — built by locals who were sick of overpriced, unreliable crews that never showed up. So we built the thing we wished existed.</p>
+        <p>Trash Cowboys was born right here in Denver. Built by locals who were sick of overpriced, unreliable crews that never showed up. So we built the thing we wished existed.</p>
         <p>Licensed, insured, and proud of the eco-first approach. We donate before we dump, recycle before we landfill, and leave every space cleaner than we found it.</p>
         <blockquote>"We recycle what we can, donate what we can't, and landfill only what's left. That's the cowboy way."</blockquote>
         <ul class="about-checks">
@@ -588,11 +570,10 @@
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
 <section class="faq section" id="faq">
   <div class="container container-narrow">
     <header class="section-head">
-      <span class="eyebrow">— Got Questions? —</span>
+      <span class="eyebrow">Got Questions?</span>
       <h2>Straight-Shootin' Answers</h2>
     </header>
     <div class="faq-list">
@@ -602,15 +583,15 @@
       </details>
       <details>
         <summary>Do you offer same-day service?<svg><use href="#i-chevron"/></svg></summary>
-        <p>Yes — same-day is available most days across Denver Metro. Call before noon for the best chance of a same-day slot. Same-day jobs are priced at a priority rate.</p>
+        <p>Yes. Same-day is available most days across Denver Metro. Call before noon for the best chance of a same-day slot. Same-day jobs are priced at a priority rate.</p>
       </details>
       <details>
         <summary>How does your pricing work?<svg><use href="#i-chevron"/></svg></summary>
-        <p>We don't post flat rates because every job is different — volume, access, stairs, materials. You'll get a free, upfront quote before we touch a thing. No pricing games. You approve, we haul.</p>
+        <p>We don't post flat rates because every job is different. Volume, access, stairs, materials all matter. You'll get a free, upfront quote before we touch a thing. No pricing games. You approve, we haul.</p>
       </details>
       <details>
         <summary>What areas do you serve?<svg><use href="#i-chevron"/></svg></summary>
-        <p>All of Denver Metro and the Front Range — Aurora, Golden, Lakewood, Westminster, Boulder, Wheat Ridge, Applewood, Arvada, Broomfield, Littleton, Highlands Ranch, Parker, Castle Rock, and everywhere in between.</p>
+        <p>All of Denver Metro and the Front Range. Aurora, Golden, Lakewood, Westminster, Boulder, Wheat Ridge, Applewood, Arvada, Broomfield, Littleton, Highlands Ranch, Parker, Castle Rock, and everywhere in between.</p>
       </details>
       <details>
         <summary>Are your estimates really free?<svg><use href="#i-chevron"/></svg></summary>
@@ -618,28 +599,27 @@
       </details>
       <details>
         <summary>What do you do with the junk?<svg><use href="#i-chevron"/></svg></summary>
-        <p>Donate first, recycle second, landfill last. Usable items go to Denver-area charities. Metals, electronics, wood, concrete, mattresses, and yard waste get sorted at certified Colorado recycling facilities. Only true waste ends up in a landfill — about 40% of what we haul.</p>
+        <p>Donate first, recycle second, landfill last. Usable items go to Denver-area charities. Metals, electronics, wood, concrete, mattresses, and yard waste get sorted at certified Colorado recycling facilities. Only true waste ends up in a landfill, about 40% of what we haul.</p>
       </details>
       <details>
         <summary>Do you haul electronics, mattresses, and hazardous items?<svg><use href="#i-chevron"/></svg></summary>
-        <p>Yes to all three. Electronics go to certified e-waste facilities. Mattresses are separated and recycled. Hazardous items (paint, chemicals, oils) are taken to proper Colorado disposal sites — we don't just dump them.</p>
+        <p>Yes to all three. Electronics go to certified e-waste facilities. Mattresses are separated and recycled. Hazardous items (paint, chemicals, oils) are taken to proper Colorado disposal sites. We don't just dump them.</p>
       </details>
       <details>
         <summary>Do you work with property managers and contractors?<svg><use href="#i-chevron"/></svg></summary>
-        <p>Absolutely — commercial accounts are a big part of what we do. We offer priority scheduling, dedicated contacts, and recurring service contracts. Reach out and we'll set it up.</p>
+        <p>Absolutely. Commercial accounts are a big part of what we do. We offer priority scheduling, dedicated contacts, and recurring service contracts. Reach out and we'll set it up.</p>
       </details>
     </div>
   </div>
 </section>
 
-<!-- ============ QUOTE FORM ============ -->
 <section class="quote section-dark section" id="quote">
   <div class="container">
     <div class="quote-grid">
       <div class="quote-copy">
-        <span class="eyebrow eyebrow-gold">— Free Estimate —</span>
+        <span class="eyebrow eyebrow-gold">Free Estimate</span>
         <h2>Rope Us In</h2>
-        <p>Snap a photo of your junk and drop it in the form — or just call. Either way we'll get back to you fast.</p>
+        <p>Snap a photo of your junk and drop it in the form, or just call. Either way we'll get back to you fast.</p>
         <div class="quote-contact">
           <a href="tel:3035550199" class="qc-link">
             <svg><use href="#i-phone"/></svg>
@@ -680,20 +660,20 @@
               <option>Furniture</option><option>Appliances</option><option>Full Cleanout</option>
               <option>Mattress</option><option>Electronics / E-Waste</option><option>Construction Debris</option>
               <option>Yard Waste</option><option>Hot Tub</option><option>Commercial / Property Mgmt</option>
-              <option>Not Sure — Need a Quote</option>
+              <option>Not Sure, Need a Quote</option>
             </select>
           </label>
         </div>
         <label>Photo of Your Junk <span class="label-hint">(fastest way to a quote)</span>
           <input type="file" name="photos" accept="image/*" multiple>
-          <span class="file-hint">JPG, PNG, HEIC up to 10MB · Up to 5 photos</span>
+          <span class="file-hint">JPG, PNG, HEIC up to 10MB. Up to 5 photos.</span>
         </label>
         <div class="form-row">
           <label>When Do You Need Us?
             <select name="timing" required>
               <option value="">Pick a time...</option>
               <option>Same Day (priority rate)</option><option>This Week</option>
-              <option>Next Week</option><option>Flexible — Best Price</option>
+              <option>Next Week</option><option>Flexible, Best Price</option>
             </select>
           </label>
           <label>Residential or Commercial?
@@ -705,16 +685,15 @@
         </div>
         <label>Anything else we should know?<textarea name="notes" rows="3" placeholder="Stairs, tight spaces, multiple stops, special items..."></textarea></label>
         <button type="submit" class="btn btn-primary btn-lg btn-full">
-          <span>Rope Us In — Get My Free Quote</span>
+          <span>Rope Us In, Get My Free Quote</span>
           <svg><use href="#i-arrow"/></svg>
         </button>
-        <p class="form-fine">No spam. No sales calls. Just a cowboy with a quote — usually within the hour.</p>
+        <p class="form-fine">No spam. No sales calls. Just a cowboy with a quote, usually within the hour.</p>
       </form>
     </div>
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
