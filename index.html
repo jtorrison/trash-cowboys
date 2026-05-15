@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trash Cowboys · Eco-First Junk Removal · Denver CO</title>
-<meta name="description" content="Denver's eco-first junk removal crew. We recycle what we can, donate what we can't, and landfill only what's left. Same-day service. Text a photo for a fast quote.">
+<meta name="description" content="Denver's eco-first junk removal crew. We recycle, donate, and dispose of your stuff the right way. Same-day service. Text a photo for a fast quote.">
 
 <link rel="icon" type="image/png" href="images/favicon.png?v=2">
 <link rel="apple-touch-icon" href="images/favicon.png?v=2">
 
 <meta property="og:title" content="Trash Cowboys · Eco-First Junk Removal · Denver">
-<meta property="og:description" content="We recycle what we can, donate what we can't, and landfill only what's left. Same-day service across Denver Metro.">
+<meta property="og:description" content="Same-day junk removal across Denver Metro. We recycle, donate, and dispose of your stuff the right way.">
 <meta property="og:image" content="images/logo-main.png">
 <meta property="og:url" content="https://trashcowboys.co">
 <meta property="og:type" content="website">
@@ -86,10 +86,14 @@
       <circle cx="5.5" cy="18.5" r="2.5"/>
       <circle cx="17.5" cy="18.5" r="2.5"/>
     </symbol>
+    <!-- Real recycle icon: classic triangular three-arrows symbol -->
     <symbol id="i-recycle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M7 19l-4-4 4-4"/>
-      <path d="M3 15h10a4 4 0 0 0 4-4V5"/>
-      <path d="M17 5l4 4-4 4"/>
+      <path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5"/>
+      <path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12"/>
+      <path d="M14 16l-3 3 3 3"/>
+      <path d="M8.293 13.596 7.196 9.5 3.1 10.598"/>
+      <path d="m9.344 5.811 1.093-1.892A1.83 1.83 0 0 1 12.001 3a1.83 1.83 0 0 1 1.564.919l1.044 1.81"/>
+      <path d="M13.378 9.633 16.5 8.5l1.126-3.121"/>
     </symbol>
     <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
       <path d="M11 20A7 7 0 0 1 4 13c0-6 6-9 16-9 0 10-3 16-9 16z"/>
@@ -174,26 +178,11 @@
   </div>
 </nav>
 
-<header class="hero" id="top">
+<!-- HERO with form: instant social proof, then quote form -->
+<header class="hero hero-dark" id="top">
   <div class="container hero-inner">
     <div class="hero-copy">
-      <span class="eyebrow eyebrow-gold">Denver's Eco-First Junk Crew</span>
-      <h1>
-        <span>We Ride In</span>
-        <span>&amp; Haul It Out.</span>
-      </h1>
-      <p class="hero-lede">Same-day junk removal across Denver Metro. We recycle, donate, and dispose of your stuff the right way.</p>
-      <div class="hero-ctas">
-        <a href="#quote" class="btn btn-primary btn-lg">
-          <span>Request a Free Quote</span>
-          <svg><use href="#i-arrow"/></svg>
-        </a>
-        <a href="tel:3035550199" class="btn btn-ghost btn-lg">
-          <svg><use href="#i-phone"/></svg>
-          <span>Call Now</span>
-        </a>
-      </div>
-      <div class="hero-social">
+      <div class="hero-badge-row">
         <div class="rating-badge">
           <svg class="g-logo"><use href="#i-google"/></svg>
           <div class="rating-content">
@@ -204,19 +193,80 @@
             <span>Google Reviews</span>
           </div>
         </div>
-        <div class="hero-trust">
-          <span><svg><use href="#i-check"/></svg> Licensed &amp; Insured</span>
-          <span><svg><use href="#i-bolt"/></svg> Same-Day Available</span>
+        <div class="trust-pills">
+          <span class="trust-pill"><svg><use href="#i-check"/></svg> Licensed</span>
+          <span class="trust-pill"><svg><use href="#i-bolt"/></svg> Same-Day</span>
         </div>
       </div>
-      <p class="hero-areas">Aurora · Golden · Westminster · Boulder · Lakewood · Wheat Ridge · Applewood · All of Metro Denver</p>
+      <span class="eyebrow eyebrow-gold">Denver's Eco-First Junk Crew</span>
+      <h1>
+        <span>We Ride In</span>
+        <span>&amp; Haul It Out.</span>
+      </h1>
+      <p class="hero-lede">Same-day junk removal across Denver Metro. We recycle, donate, and dispose of your stuff the right way.</p>
+      <div class="hero-ctas">
+        <a href="tel:3035550199" class="btn btn-primary btn-lg">
+          <svg><use href="#i-phone"/></svg>
+          <span>Call (303) 555-0199</span>
+        </a>
+        <a href="sms:3035550199" class="btn btn-ghost-light btn-lg">
+          <svg><use href="#i-camera"/></svg>
+          <span>Text a Photo</span>
+        </a>
+      </div>
+      <p class="hero-areas">Aurora, Golden, Westminster, Boulder, Lakewood, Wheat Ridge, Applewood &amp; all of Metro Denver</p>
     </div>
-    <div class="hero-badge">
-      <img src="images/logo-main.png" alt="Trash Cowboys, Junk Removal Denver">
-    </div>
+
+    <!-- Quote form right in the hero -->
+    <aside class="hero-form-wrap">
+      <div class="hero-form-card">
+        <header class="hero-form-head">
+          <span class="hero-form-eyebrow">Free Estimate</span>
+          <h2>Get a Fast Quote</h2>
+          <p>Snap a photo and we'll quote you, usually within the hour.</p>
+        </header>
+        <form class="hero-form" action="https://formspree.io/f/xrergvwe" method="POST" enctype="multipart/form-data">
+          <div class="form-row">
+            <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+            <label>Phone<input type="tel" name="phone" placeholder="(303) 555-0199" required></label>
+          </div>
+          <label>City
+            <select name="city" required>
+              <option value="">Select your city</option>
+              <option>Denver</option><option>Aurora</option><option>Lakewood</option><option>Golden</option>
+              <option>Westminster</option><option>Arvada</option><option>Wheat Ridge</option><option>Applewood</option>
+              <option>Boulder</option><option>Broomfield</option><option>Littleton</option><option>Englewood</option>
+              <option>Highlands Ranch</option><option>Parker</option><option>Castle Rock</option><option>Other Denver Metro</option>
+            </select>
+          </label>
+          <label>What needs hauling?
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option>Furniture</option><option>Appliances</option><option>Full Cleanout</option>
+              <option>Mattress</option><option>Electronics / E-Waste</option><option>Construction Debris</option>
+              <option>Yard Waste</option><option>Hot Tub</option><option>Commercial / Property Mgmt</option>
+              <option>Not sure, need a quote</option>
+            </select>
+          </label>
+          <label class="photo-label">
+            <span class="photo-label-row">
+              <svg><use href="#i-camera"/></svg>
+              <strong>Add a photo (optional, faster quote)</strong>
+            </span>
+            <input type="file" name="photos" accept="image/*" multiple>
+          </label>
+          <button type="submit" class="btn btn-primary btn-lg btn-full">
+            <span>Get My Free Quote</span>
+            <svg><use href="#i-arrow"/></svg>
+          </button>
+          <p class="form-fine">No spam, no sales calls. Just a quote, usually within the hour.</p>
+        </form>
+      </div>
+    </aside>
   </div>
 </header>
 
+<!-- Trust strip remains as confirmation below hero -->
 <section class="trust-strip">
   <div class="container">
     <div class="trust-item">
@@ -258,49 +308,58 @@
     </header>
     <div class="services-grid">
       <article class="service">
-        <svg class="service-icon"><use href="#i-sofa"/></svg>
+        <div class="service-icon-wrap"><svg class="service-icon"><use href="#i-sofa"/></svg></div>
         <h3>Furniture</h3>
         <p>Sofas, beds, dressers, desks. No stairs too tall for a cowboy.</p>
+        <span class="service-arrow"><svg><use href="#i-arrow"/></svg></span>
       </article>
       <article class="service">
-        <svg class="service-icon"><use href="#i-appliance"/></svg>
+        <div class="service-icon-wrap"><svg class="service-icon"><use href="#i-appliance"/></svg></div>
         <h3>Appliances</h3>
         <p>Fridges, washers, dryers, AC units. Disconnected and hauled.</p>
+        <span class="service-arrow"><svg><use href="#i-arrow"/></svg></span>
       </article>
       <article class="service">
-        <svg class="service-icon"><use href="#i-house"/></svg>
+        <div class="service-icon-wrap"><svg class="service-icon"><use href="#i-house"/></svg></div>
         <h3>Full Cleanouts</h3>
         <p>Garage, estate, hoarder, storage unit. We bring the crew.</p>
+        <span class="service-arrow"><svg><use href="#i-arrow"/></svg></span>
       </article>
       <article class="service">
-        <svg class="service-icon"><use href="#i-mattress"/></svg>
+        <div class="service-icon-wrap"><svg class="service-icon"><use href="#i-mattress"/></svg></div>
         <h3>Mattresses</h3>
         <p>Eco-friendly mattress disposal. Recycled, not just dumped.</p>
+        <span class="service-arrow"><svg><use href="#i-arrow"/></svg></span>
       </article>
       <article class="service">
-        <svg class="service-icon"><use href="#i-electronics"/></svg>
+        <div class="service-icon-wrap"><svg class="service-icon"><use href="#i-electronics"/></svg></div>
         <h3>Electronics</h3>
         <p>TVs, computers, monitors. Certified e-waste recycling.</p>
+        <span class="service-arrow"><svg><use href="#i-arrow"/></svg></span>
       </article>
       <article class="service">
-        <svg class="service-icon"><use href="#i-construction"/></svg>
+        <div class="service-icon-wrap"><svg class="service-icon"><use href="#i-construction"/></svg></div>
         <h3>Construction Debris</h3>
         <p>Drywall, lumber, tile, concrete. Post-reno cleanups done right.</p>
+        <span class="service-arrow"><svg><use href="#i-arrow"/></svg></span>
       </article>
       <article class="service">
-        <svg class="service-icon"><use href="#i-yard"/></svg>
+        <div class="service-icon-wrap"><svg class="service-icon"><use href="#i-yard"/></svg></div>
         <h3>Yard Waste</h3>
         <p>Branches, dirt, rocks, old fencing. We make it look untouched.</p>
+        <span class="service-arrow"><svg><use href="#i-arrow"/></svg></span>
       </article>
       <article class="service">
-        <svg class="service-icon"><use href="#i-hottub"/></svg>
+        <div class="service-icon-wrap"><svg class="service-icon"><use href="#i-hottub"/></svg></div>
         <h3>Hot Tub Removal</h3>
         <p>Old hot tub ruining the backyard? We'll wrangle it out.</p>
+        <span class="service-arrow"><svg><use href="#i-arrow"/></svg></span>
       </article>
       <article class="service">
-        <svg class="service-icon"><use href="#i-hazard"/></svg>
+        <div class="service-icon-wrap"><svg class="service-icon"><use href="#i-hazard"/></svg></div>
         <h3>Hazardous &amp; Paint</h3>
         <p>Old paints, chemicals, oils. Taken to proper disposal sites.</p>
+        <span class="service-arrow"><svg><use href="#i-arrow"/></svg></span>
       </article>
     </div>
     <div class="section-foot">
@@ -315,7 +374,7 @@
 
 <section class="photo-strip">
   <div class="container">
-    <div class="photo-block" data-photo="truck-and-crew">
+    <div class="photo-block">
       <div class="photo-placeholder">
         <svg><use href="#i-truck"/></svg>
         <p>Photo zone: truck and crew shot</p>
@@ -440,7 +499,7 @@
             </div>
           </li>
         </ul>
-        <a href="#quote" class="btn btn-gold">
+        <a href="#top" class="btn btn-gold">
           <span>Set Up a Commercial Account</span>
           <svg><use href="#i-arrow"/></svg>
         </a>
@@ -579,7 +638,7 @@
     <div class="faq-list">
       <details>
         <summary>How do I get a quote?<svg><use href="#i-chevron"/></svg></summary>
-        <p>Easiest way: text a photo of your junk to (303) 555-0199. You'll have a quote back within an hour, usually much faster. You can also call, or fill out the form below.</p>
+        <p>Easiest way: text a photo of your junk to (303) 555-0199. You'll have a quote back within an hour, usually much faster. You can also call, or fill out the form at the top of the page.</p>
       </details>
       <details>
         <summary>Do you offer same-day service?<svg><use href="#i-chevron"/></svg></summary>
@@ -613,83 +672,23 @@
   </div>
 </section>
 
-<section class="quote section-dark section" id="quote">
-  <div class="container">
-    <div class="quote-grid">
-      <div class="quote-copy">
-        <span class="eyebrow eyebrow-gold">Free Estimate</span>
-        <h2>Rope Us In</h2>
-        <p>Snap a photo of your junk and drop it in the form, or just call. Either way we'll get back to you fast.</p>
-        <div class="quote-contact">
-          <a href="tel:3035550199" class="qc-link">
-            <svg><use href="#i-phone"/></svg>
-            <div>
-              <span>Call</span>
-              <strong>(303) 555-0199</strong>
-            </div>
-          </a>
-          <a href="sms:3035550199" class="qc-link">
-            <svg><use href="#i-camera"/></svg>
-            <div>
-              <span>Text a Photo</span>
-              <strong>(303) 555-0199</strong>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <form class="quote-form" action="https://formspree.io/f/xrergvwe" method="POST" enctype="multipart/form-data">
-        <div class="form-row">
-          <label>Your Name<input type="text" name="name" placeholder="Partner's name..." required></label>
-          <label>Phone Number<input type="tel" name="phone" placeholder="(303) 555-..." required></label>
-        </div>
-        <label>Email (optional)<input type="email" name="email" placeholder="your@email.com"></label>
-        <div class="form-row">
-          <label>Your City
-            <select name="city" required>
-              <option value="">Select city...</option>
-              <option>Denver</option><option>Aurora</option><option>Lakewood</option><option>Golden</option>
-              <option>Westminster</option><option>Arvada</option><option>Wheat Ridge</option><option>Applewood</option>
-              <option>Boulder</option><option>Broomfield</option><option>Littleton</option><option>Englewood</option>
-              <option>Highlands Ranch</option><option>Parker</option><option>Castle Rock</option><option>Other Denver Metro</option>
-            </select>
-          </label>
-          <label>Service Type
-            <select name="service" required>
-              <option value="">Select a service...</option>
-              <option>Furniture</option><option>Appliances</option><option>Full Cleanout</option>
-              <option>Mattress</option><option>Electronics / E-Waste</option><option>Construction Debris</option>
-              <option>Yard Waste</option><option>Hot Tub</option><option>Commercial / Property Mgmt</option>
-              <option>Not Sure, Need a Quote</option>
-            </select>
-          </label>
-        </div>
-        <label>Photo of Your Junk <span class="label-hint">(fastest way to a quote)</span>
-          <input type="file" name="photos" accept="image/*" multiple>
-          <span class="file-hint">JPG, PNG, HEIC up to 10MB. Up to 5 photos.</span>
-        </label>
-        <div class="form-row">
-          <label>When Do You Need Us?
-            <select name="timing" required>
-              <option value="">Pick a time...</option>
-              <option>Same Day (priority rate)</option><option>This Week</option>
-              <option>Next Week</option><option>Flexible, Best Price</option>
-            </select>
-          </label>
-          <label>Residential or Commercial?
-            <select name="type" required>
-              <option value="">Select...</option>
-              <option>Residential</option><option>Commercial / Property Management</option>
-            </select>
-          </label>
-        </div>
-        <label>Anything else we should know?<textarea name="notes" rows="3" placeholder="Stairs, tight spaces, multiple stops, special items..."></textarea></label>
-        <button type="submit" class="btn btn-primary btn-lg btn-full">
-          <span>Rope Us In, Get My Free Quote</span>
-          <svg><use href="#i-arrow"/></svg>
-        </button>
-        <p class="form-fine">No spam. No sales calls. Just a cowboy with a quote, usually within the hour.</p>
-      </form>
+<!-- Bottom CTA strip (since form is now in hero, simplify bottom contact) -->
+<section class="cta-bottom section-dark section">
+  <div class="container cta-bottom-inner">
+    <div>
+      <span class="eyebrow eyebrow-gold">Ready to Ride?</span>
+      <h2>Let's Haul Some Junk.</h2>
+      <p>Two ways to get a quote. Pick what's easiest.</p>
+    </div>
+    <div class="cta-bottom-actions">
+      <a href="tel:3035550199" class="btn btn-primary btn-lg">
+        <svg><use href="#i-phone"/></svg>
+        <span>Call (303) 555-0199</span>
+      </a>
+      <a href="#top" class="btn btn-gold btn-lg">
+        <span>Use the Quote Form</span>
+        <svg><use href="#i-arrow"/></svg>
+      </a>
     </div>
   </div>
 </section>
@@ -717,10 +716,10 @@
         <h5>Service Areas</h5>
         <ul>
           <li>Denver</li>
-          <li>Aurora · Golden</li>
-          <li>Lakewood · Applewood</li>
-          <li>Westminster · Arvada</li>
-          <li>Boulder · Broomfield</li>
+          <li>Aurora, Golden</li>
+          <li>Lakewood, Applewood</li>
+          <li>Westminster, Arvada</li>
+          <li>Boulder, Broomfield</li>
           <li>Wheat Ridge &amp; More</li>
         </ul>
       </div>
